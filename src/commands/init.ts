@@ -56,7 +56,7 @@ export = {
         })
 
         await generate({
-          template: 'vanilla/.index.html.ejs',
+          template: 'vanilla/index.html.ejs',
           target: `${lowerProjectName}/index.html`,
           props: { project_name },
         })
@@ -80,20 +80,8 @@ export = {
 
         break
       case 'React':
-        await generate({
-          template: 'vanilla/README.md.ejs',
-          target: `${lowerProjectName}/README.md`,
-          props: { project_name, technologies, github_username, username },
-        })
-
         break
       case 'React + TS':
-        await generate({
-          template: 'vanilla/README.md.ejs',
-          target: `${lowerProjectName}/README.md`,
-          props: { project_name, technologies, github_username, username },
-        })
-
         break
       default:
         break
