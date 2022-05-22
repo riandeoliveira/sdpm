@@ -2,7 +2,7 @@
   "name": "sdpm",
   "version": "0.0.1",
   "description": "sdpm CLI",
-  "private": true,
+  "private": false,
   "types": "build/types/types.d.ts",
   "bin": {
     "sdpm": "bin/sdpm"
