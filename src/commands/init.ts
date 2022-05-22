@@ -87,7 +87,7 @@ export = {
 
         await generate({
           template: 'react-js/src/assets/icons/.gitkeep',
-          target: `${lowerProjectName}/icons/.gitkeep`,
+          target: `${lowerProjectName}/src/icons/.gitkeep`,
         })
 
         await generate({
