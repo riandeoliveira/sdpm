@@ -191,6 +191,140 @@ export = {
 
         break
       case 'React + TS':
+        await generate({
+          template: 'react-ts/.github/.gitkeep',
+          target: `${lowerProjectName}/.github/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/assets/icons/.gitkeep',
+          target: `${lowerProjectName}/src/assets/icons/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/assets/images/.gitkeep',
+          target: `${lowerProjectName}/src/assets/images/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/assets/videos/.gitkeep',
+          target: `${lowerProjectName}/src/assets/videos/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/assets/index.ts.ejs',
+          target: `${lowerProjectName}/src/assets/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/components/.gitkeep',
+          target: `${lowerProjectName}/src/components/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/interfaces/index.ts.ejs',
+          target: `${lowerProjectName}/src/interfaces/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/pages/.gitkeep',
+          target: `${lowerProjectName}/src/pages/.gitkeep`,
+        })
+
+        await generate({
+          template: 'react-js/src/services/api.ts.ejs',
+          target: `${lowerProjectName}/src/services/api.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/themes/colors/index.ts.ejs',
+          target: `${lowerProjectName}/src/themes/colors/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/themes/fonts/index.ts.ejs',
+          target: `${lowerProjectName}/src/themes/fonts/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/types/index.ts.ejs',
+          target: `${lowerProjectName}/src/types/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/App.tsx.ejs',
+          target: `${lowerProjectName}/src/App.tsx`,
+        })
+
+        await generate({
+          template: 'react-js/src/index.ts.ejs',
+          target: `${lowerProjectName}/src/index.ts`,
+        })
+
+        await generate({
+          template: 'react-js/src/main.tsx.ejs',
+          target: `${lowerProjectName}/src/main.tsx`,
+        })
+
+        await generate({
+          template: 'react-js/src/vite-env.d.ts.ejs',
+          target: `${lowerProjectName}/src/vite-env.d.ts`,
+        })
+
+        await generate({
+          template: 'react-js/.env',
+          target: `${lowerProjectName}/.env`,
+        })
+
+        await generate({
+          template: 'react-js/.gitignore',
+          target: `${lowerProjectName}/.gitignore`,
+        })
+
+        await generate({
+          template: 'react-js/index.html.ejs',
+          target: `${lowerProjectName}/index.html`,
+          props: { project_name },
+        })
+
+        await generate({
+          template: 'react-js/LICENSE.ejs',
+          target: `${lowerProjectName}/LICENSE`,
+          props: { currentYear, username },
+        })
+
+        await generate({
+          template: 'react-js/package.json.ejs',
+          target: `${lowerProjectName}/package.json`,
+          props: { lowerProjectName },
+        })
+
+        await generate({
+          template: 'react-js/README.md.ejs',
+          target: `${lowerProjectName}/README.md`,
+          props: { project_name, github_username, username },
+        })
+
+        await generate({
+          template: 'react-js/TODO.md.ejs',
+          target: `${lowerProjectName}/TODO.md`,
+        })
+
+        await generate({
+          template: 'react-js/tsconfig.json.ejs',
+          target: `${lowerProjectName}/tsconfig.json`,
+        })
+
+        await generate({
+          template: 'react-js/tsconfig.node.json.ejs',
+          target: `${lowerProjectName}/tsconfig.node.json`,
+        })
+
+        await generate({
+          template: 'react-js/vite.config.ts.ejs',
+          target: `${lowerProjectName}/vite.config.ts`,
+        })
+
         break
       default:
         break
