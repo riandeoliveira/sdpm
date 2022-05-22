@@ -18,7 +18,7 @@ const questions = [
     type: 'select',
     name: 'technologies',
     message: 'Select your project technologies:',
-    choices: ['HTML / CSS / JS', 'React', 'React + TS'],
+    choices: ['HTML / CSS / JS', 'React', 'React / TS'],
   },
 ]
 

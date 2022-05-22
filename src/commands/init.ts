@@ -190,7 +190,7 @@ export = {
         })
 
         break
-      case 'React + TS':
+      case 'React / TS':
         await generate({
           template: 'react-ts/.github/.gitkeep',
           target: `${lowerProjectName}/.github/.gitkeep`,
