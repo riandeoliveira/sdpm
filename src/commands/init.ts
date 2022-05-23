@@ -16,7 +16,7 @@ export = {
     switch (technologies) {
       case 'HTML / CSS / JS':
         await generate({
-          template: 'vanilla/.github/.gitkeep',
+          template: 'vanilla/.github/.gitkeep.ejs',
           target: `${lowerProjectName}/.github/.gitkeep`,
         })
 
@@ -26,17 +26,17 @@ export = {
         })
 
         await generate({
-          template: 'vanilla/assets/fonts/.gitkeep',
+          template: 'vanilla/assets/fonts/.gitkeep.ejs',
           target: `${lowerProjectName}/assets/fonts/.gitkeep`,
         })
 
         await generate({
-          template: 'vanilla/assets/icons/.gitkeep',
+          template: 'vanilla/assets/icons/.gitkeep.ejs',
           target: `${lowerProjectName}/assets/icons/.gitkeep`,
         })
 
         await generate({
-          template: 'vanilla/assets/images/.gitkeep',
+          template: 'vanilla/assets/images/.gitkeep.ejs',
           target: `${lowerProjectName}/assets/images/.gitkeep`,
         })
 
@@ -46,12 +46,12 @@ export = {
         })
 
         await generate({
-          template: 'vanilla/assets/videos/.gitkeep',
+          template: 'vanilla/assets/videos/.gitkeep.ejs',
           target: `${lowerProjectName}/assets/videos/.gitkeep`,
         })
 
         await generate({
-          template: 'vanilla/.gitignore',
+          template: 'vanilla/.gitignore.ejs',
           target: `${lowerProjectName}/.gitignore`,
         })
 
@@ -81,22 +81,22 @@ export = {
         break
       case 'React':
         await generate({
-          template: 'react-js/.github/.gitkeep',
+          template: 'react-js/.github/.gitkeep.ejs',
           target: `${lowerProjectName}/.github/.gitkeep`,
         })
 
         await generate({
-          template: 'react-js/src/assets/icons/.gitkeep',
+          template: 'react-js/src/assets/icons/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/icons/.gitkeep`,
         })
 
         await generate({
-          template: 'react-js/src/assets/images/.gitkeep',
+          template: 'react-js/src/assets/images/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/images/.gitkeep`,
         })
 
         await generate({
-          template: 'react-js/src/assets/videos/.gitkeep',
+          template: 'react-js/src/assets/videos/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/videos/.gitkeep`,
         })
 
@@ -106,12 +106,12 @@ export = {
         })
 
         await generate({
-          template: 'react-js/src/components/.gitkeep',
+          template: 'react-js/src/components/.gitkeep.ejs',
           target: `${lowerProjectName}/src/components/.gitkeep`,
         })
 
         await generate({
-          template: 'react-js/src/pages/.gitkeep',
+          template: 'react-js/src/pages/.gitkeep.ejs',
           target: `${lowerProjectName}/src/pages/.gitkeep`,
         })
 
@@ -146,12 +146,12 @@ export = {
         })
 
         await generate({
-          template: 'react-js/.env',
+          template: 'react-js/.ejs',
           target: `${lowerProjectName}/.env`,
         })
 
         await generate({
-          template: 'react-js/.gitignore',
+          template: 'react-js/.gitignore.ejs',
           target: `${lowerProjectName}/.gitignore`,
         })
 
@@ -192,22 +192,22 @@ export = {
         break
       case 'React / TS':
         await generate({
-          template: 'react-ts/.github/.gitkeep',
+          template: 'react-ts/.github/.gitkeep.ejs',
           target: `${lowerProjectName}/.github/.gitkeep`,
         })
 
         await generate({
-          template: 'react-ts/src/assets/icons/.gitkeep',
+          template: 'react-ts/src/assets/icons/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/icons/.gitkeep`,
         })
 
         await generate({
-          template: 'react-ts/src/assets/images/.gitkeep',
+          template: 'react-ts/src/assets/images/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/images/.gitkeep`,
         })
 
         await generate({
-          template: 'react-ts/src/assets/videos/.gitkeep',
+          template: 'react-ts/src/assets/videos/.gitkeep.ejs',
           target: `${lowerProjectName}/src/assets/videos/.gitkeep`,
         })
 
@@ -217,7 +217,7 @@ export = {
         })
 
         await generate({
-          template: 'react-ts/src/components/.gitkeep',
+          template: 'react-ts/src/components/.gitkeep.ejs',
           target: `${lowerProjectName}/src/components/.gitkeep`,
         })
 
@@ -227,7 +227,7 @@ export = {
         })
 
         await generate({
-          template: 'react-ts/src/pages/.gitkeep',
+          template: 'react-ts/src/pages/.gitkeep.ejs',
           target: `${lowerProjectName}/src/pages/.gitkeep`,
         })
 
@@ -247,7 +247,7 @@ export = {
         })
 
         await generate({
-          template: 'react-ts/src/types/.gitkeep',
+          template: 'react-ts/src/types/.gitkeep.ejs',
           target: `${lowerProjectName}/src/types/.gitkeep`,
         })
 
@@ -272,12 +272,12 @@ export = {
         })
 
         await generate({
-          template: 'react-ts/.env',
+          template: 'react-ts/.env.ejs',
           target: `${lowerProjectName}/.env`,
         })
 
         await generate({
-          template: 'react-ts/.gitignore',
+          template: 'react-ts/.gitignore.ejs',
           target: `${lowerProjectName}/.gitignore`,
         })
 
