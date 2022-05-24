@@ -1,7 +1,9 @@
-const questions = [
+import { QuestionList } from '../interfaces'
+
+const questions: QuestionList = [
   {
     type: 'input',
-    name: 'username',
+    name: 'author',
     message: 'Your name:',
   },
   {
@@ -16,9 +18,14 @@ const questions = [
   },
   {
     type: 'select',
-    name: 'technologies',
-    message: 'Select your project technologies:',
-    choices: ['HTML / CSS / JS', 'React', 'React / TS'],
+    name: 'dev_side',
+    message: 'Select your side:',
+    choices: [
+      '🖥️   Front-End',
+      '🗄️   Back-End',
+      '📱  Mobile',
+      '🛠️   Full-Stack',
+    ],
   },
 ]
 

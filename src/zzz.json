@@ -1,0 +1,50 @@
+[
+  {
+    "template": "init/client/vanilla/assets/css/styles.css.ejs",
+    "target": "/assets/css/styles.css"
+  },
+  {
+    "template": "init/client/vanilla/assets/fonts/gitkeep.ejs",
+    "target": "/assets/fonts/.gitkeep"
+  },
+  {
+    "template": "init/client/vanilla/assets/icons/gitkeep.ejs",
+    "target": "/assets/icons/.gitkeep"
+  },
+  {
+    "template": "init/client/vanilla/assets/images/gitkeep.ejs",
+    "target": "/assets/images/.gitkeep"
+  },
+  {
+    "template": "init/client/vanilla/assets/js/script.js.ejs",
+    "target": "/assets/js/script.js"
+  },
+  {
+    "template": "init/client/vanilla/assets/videos/gitkeep.ejs",
+    "target": "/assets/videos/.gitkeep"
+  },
+  {
+    "template": "init/client/vanilla/github/gitkeep.ejs",
+    "target": "/.github/.gitkeep"
+  },
+  {
+    "template": "init/client/vanilla/gitignore.ejs",
+    "target": "/.gitignore"
+  },
+  {
+    "template": "init/client/vanilla/index.html.ejs",
+    "target": "/index.html"
+  },
+  {
+    "template": "init/client/vanilla/LICENSE.ejs",
+    "target": "/LICENSE"
+  },
+  {
+    "template": "init/client/vanilla/README.md.ejs",
+    "target": "/README.md"
+  },
+  {
+    "template": "init/client/vanilla/TODO.md.ejs",
+    "target": "/TODO.md"
+  }
+]
