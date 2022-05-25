@@ -1,0 +1,58 @@
+[
+  {
+    "template": "init/server/nodejs/prisma/schema.prisma.ejs",
+    "target": "/prisma/schema.prisma"
+  },
+  {
+    "template": "init/server/nodejs/src/controllers/gitkeep.ejs",
+    "target": "/src/controllers/.gitkeep"
+  },
+  {
+    "template": "init/server/nodejs/src/interfaces/gitkeep.ejs",
+    "target": "/src/interfaces/.gitkeep"
+  },
+  {
+    "template": "init/server/nodejs/src/routes/gitkeep.ejs",
+    "target": "/src/routes/.gitkeep"
+  },
+  {
+    "template": "init/server/nodejs/src/types/index.ts.ejs",
+    "target": "/src/types/index.ts"
+  },
+  {
+    "template": "init/server/nodejs/src/prisma.ts.ejs",
+    "target": "/src/prisma.ts"
+  },
+  {
+    "template": "init/server/nodejs/src/server.ts.ejs",
+    "target": "/src/server.ts"
+  },
+  {
+    "template": "init/server/nodejs/env.ejs",
+    "target": "/.env"
+  },
+  {
+    "template": "init/server/nodejs/gitignore.ejs",
+    "target": "/.gitignore"
+  },
+  {
+    "template": "init/server/nodejs/LICENSE.ejs",
+    "target": "/LICENSE"
+  },
+  {
+    "template": "init/server/nodejs/package.json.ejs",
+    "target": "/package.json"
+  },
+  {
+    "template": "init/server/nodejs/README.md.ejs",
+    "target": "/README.md"
+  },
+  {
+    "template": "init/server/nodejs/TODO.md.ejs",
+    "target": "/TODO.md"
+  },
+  {
+    "template": "init/server/nodejs/tsconfig.json.ejs",
+    "target": "/tsconfig.json"
+  }
+]
