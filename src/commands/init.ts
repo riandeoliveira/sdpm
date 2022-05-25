@@ -6,6 +6,7 @@ import mobileQuestions from '../questions/mobile'
 import fullstackQuestions from '../questions/fullstack'
 import databaseQuestions from '../questions/database'
 import { vanillaPath, reactjsPath } from '../paths'
+import { PathList } from '../interfaces'
 
 export = {
   name: 'init',
@@ -21,29 +22,27 @@ export = {
 
     const currentYear = new Date().getFullYear()
 
+    const createProjectByPath = (path: PathList): void => {
+      path.map(async (item) => {
+        await generate({
+          template: item.template,
+          target: lowerProjectName + item.target,
+          props: { ...mainQuestionsProps, lowerProjectName, currentYear },
+        })
+      })
+    }
+
     switch (mainQuestionsProps.dev_side) {
       case '🖥️   Front-End':
         const { client_stack } = await prompt.ask(clientQuestions)
 
         switch (client_stack) {
           case '🌐  HTML / CSS / JS':
-            vanillaPath.map(async (item) => {
-              await generate({
-                template: item.template,
-                target: lowerProjectName + item.target,
-                props: { ...mainQuestionsProps, lowerProjectName, currentYear },
-              })
-            })
+            createProjectByPath(vanillaPath)
 
             break
           case '⚛️   React':
-            reactjsPath.map(async (item) => {
-              await generate({
-                template: item.template,
-                target: lowerProjectName + item.target,
-                props: { ...mainQuestionsProps, lowerProjectName, currentYear },
-              })
-            })
+            createProjectByPath(reactjsPath)
 
             break
           default:
