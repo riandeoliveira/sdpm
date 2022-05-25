@@ -6,3 +6,10 @@ export interface Questions {
 }
 
 export interface QuestionList extends Array<Questions> {}
+
+export interface Path {
+  template: string
+  target: string
+}
+
+export interface PathList extends Array<Path> {}
