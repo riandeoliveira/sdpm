@@ -65,17 +65,6 @@ export = {
 
         switch (server_stack) {
           case '⚙️   Node.js':
-            const { database } = await prompt.ask(questions.database)
-
-            switch (database) {
-              case '🍃  MongoDB':
-                break
-              case '🐘  PostgreSQL':
-                break
-              default:
-                break
-            }
-            break
 
           default:
             break
