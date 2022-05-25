@@ -27,12 +27,14 @@ export = {
       })
     }
 
-    const askByTypeScript = () => {
-      switch (key) {
+    const askByTypeScript = async (): Promise<boolean> => {
+      const { ts_option } = await prompt.ask(questions.typescript)
+
+      switch (ts_option) {
         case '✅  Yes':
-          break
+          return true
         case '❌  No':
-          break
+          return false
         default:
           break
       }
@@ -48,6 +50,10 @@ export = {
 
             break
           case '⚛️   React':
+            ;(await askByTypeScript())
+              ? createProjectByPath(path.reactjs_ts)
+              : createProjectByPath(path.reactjs)
+
             break
           default:
             break

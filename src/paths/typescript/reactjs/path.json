@@ -1,6 +1,102 @@
 [
   {
-    "template": "init/typescript/reactjs",
-    "target": ""
+    "template": "init/typescript/reactjs/github/gitkeep.ejs",
+    "target": "/src/.github/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/assets/icons/gitkeep.ejs",
+    "target": "/src/assets/icons/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/assets/images/gitkeep.ejs",
+    "target": "/src/assets/images/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/assets/videos/gitkeep.ejs",
+    "target": "/src/assets/videos/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/assets/index.ts.ejs",
+    "target": "/src/assets/index.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/components/gitkeep.ejs",
+    "target": "/src/components/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/interfaces/index.ts.ejs",
+    "target": "/src/interfaces/index.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/pages/gitkeep.ejs",
+    "target": "/src/pages/.gitkeep"
+  },
+  {
+    "template": "init/typescript/reactjs/src/services/api.ts.ejs",
+    "target": "/src/services/api.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/themes/colors/index.ts.ejs",
+    "target": "/src/themes/colors/index.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/themes/fonts/index.ts.ejs",
+    "target": "/src/themes/fonts/index.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/App.tsx.ejs",
+    "target": "/src/App.tsx"
+  },
+  {
+    "template": "init/typescript/reactjs/src/index.ts.ejs",
+    "target": "/src/index.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/src/main.tsx.ejs",
+    "target": "/src/main.tsx"
+  },
+  {
+    "template": "init/typescript/reactjs/src/vite-env.d.ts.ejs",
+    "target": "/src/vite-env.d.ts"
+  },
+  {
+    "template": "init/typescript/reactjs/env.ejs",
+    "target": "/.env"
+  },
+  {
+    "template": "init/typescript/reactjs/gitignore.ejs",
+    "target": "/.gitignore"
+  },
+  {
+    "template": "init/typescript/reactjs/index.html.ejs",
+    "target": "/index.html"
+  },
+  {
+    "template": "init/typescript/reactjs/LICENSE.ejs",
+    "target": "/LICENSE"
+  },
+  {
+    "template": "init/typescript/reactjs/package.json.ejs",
+    "target": "/package.json"
+  },
+  {
+    "template": "init/typescript/reactjs/README.md.ejs",
+    "target": "/README.md"
+  },
+  {
+    "template": "init/typescript/reactjs/TODO.md.ejs",
+    "target": "/TODO.md"
+  },
+  {
+    "template": "init/typescript/reactjs/tsconfig.json.ejs",
+    "target": "/tsconfig.json"
+  },
+  {
+    "template": "init/typescript/reactjs/tsconfig.node.json.ejs",
+    "target": "/tsconfig.node.json"
+  },
+  {
+    "template": "init/typescript/reactjs/vite.config.ts.ejs",
+    "target": "/vite.config.ts"
   }
 ]
