@@ -5,7 +5,7 @@ import serverQuestions from '../questions/server'
 import mobileQuestions from '../questions/mobile'
 import fullstackQuestions from '../questions/fullstack'
 import databaseQuestions from '../questions/database'
-import zzz from '../zzz.json'
+import { vanillaPath } from '../paths'
 
 export = {
   name: 'init',
@@ -29,7 +29,7 @@ export = {
           case '🌐  HTML / CSS / JS':
             // Função
 
-            zzz.map(async (item) => {
+            vanillaPath.map(async (item) => {
               await generate({
                 template: item.template,
                 target: lowerProjectName + item.target,
