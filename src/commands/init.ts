@@ -1,11 +1,6 @@
 import { GluegunToolbox, prompt } from 'gluegun'
-import mainQuestions from '../questions'
-import clientQuestions from '../questions/client'
-import serverQuestions from '../questions/server'
-import mobileQuestions from '../questions/mobile'
-import fullstackQuestions from '../questions/fullstack'
-import databaseQuestions from '../questions/database'
-import { vanillaPath, reactjsPath } from '../paths'
+import * as questions from '../questions'
+import * as path from '../paths'
 import { PathList } from '../interfaces'
 
 export = {
@@ -13,7 +8,7 @@ export = {
   description: 'Start a new project',
 
   run: async ({ template: { generate } }: GluegunToolbox) => {
-    const mainQuestionsProps = await prompt.ask(mainQuestions)
+    const mainQuestionsProps = await prompt.ask(questions.main)
 
     const lowerProjectName = mainQuestionsProps.project_name
       .toLowerCase()
@@ -34,15 +29,15 @@ export = {
 
     switch (mainQuestionsProps.dev_side) {
       case '🖥️   Front-End':
-        const { client_stack } = await prompt.ask(clientQuestions)
+        const { client_stack } = await prompt.ask(questions.client)
 
         switch (client_stack) {
           case '🌐  HTML / CSS / JS':
-            createProjectByPath(vanillaPath)
+            createProjectByPath(path.vanilla)
 
             break
           case '⚛️   React':
-            createProjectByPath(reactjsPath)
+            createProjectByPath(path.reactjs)
 
             break
           default:
@@ -51,11 +46,11 @@ export = {
 
         break
       case '🗄️   Back-End':
-        const { server_stack } = await prompt.ask(serverQuestions)
+        const { server_stack } = await prompt.ask(questions.server)
 
         switch (server_stack) {
           case '⚙️   Node.js':
-            const { database } = await prompt.ask(databaseQuestions)
+            const { database } = await prompt.ask(questions.database)
 
             switch (database) {
               case '🍃  MongoDB':
@@ -73,7 +68,7 @@ export = {
 
         break
       case '📱  Mobile':
-        const { mobile_stack } = await prompt.ask(mobileQuestions)
+        const { mobile_stack } = await prompt.ask(questions.mobile)
 
         switch (mobile_stack) {
           case '⚛️ React Native':
@@ -84,7 +79,7 @@ export = {
 
         break
       case '🛠️   Full-Stack':
-        const { stack } = await prompt.ask(fullstackQuestions)
+        const { stack } = await prompt.ask(questions.fullstack)
 
         switch (stack) {
           case '⚛️   MERN Stack':

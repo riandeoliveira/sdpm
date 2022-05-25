@@ -1,32 +1,9 @@
-import { QuestionList } from '../interfaces'
+import client from './client'
+import database from './database'
+import fullstack from './fullstack'
+import main from './main'
+import mobile from './mobile'
+import server from './server'
+import typescript from './typescript'
 
-const questions: QuestionList = [
-  {
-    type: 'input',
-    name: 'author',
-    message: 'Your name:',
-  },
-  {
-    type: 'input',
-    name: 'github_username',
-    message: 'Your GitHub username:',
-  },
-  {
-    type: 'input',
-    name: 'project_name',
-    message: 'Project name:',
-  },
-  {
-    type: 'select',
-    name: 'dev_side',
-    message: 'Select your side:',
-    choices: [
-      '🖥️   Front-End',
-      '🗄️   Back-End',
-      '📱  Mobile',
-      '🛠️   Full-Stack',
-    ],
-  },
-]
-
-export default questions
+export { client, database, fullstack, main, mobile, server, typescript }
