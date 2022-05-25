@@ -1,7 +1,7 @@
 import { GluegunToolbox, prompt } from 'gluegun'
 import * as questions from '../questions'
-import * as path from '../paths'
 import { PathList } from '../interfaces'
+import * as path from '../paths'
 
 export = {
   name: 'init',
@@ -27,6 +27,17 @@ export = {
       })
     }
 
+    const askByTypeScript = () => {
+      switch (key) {
+        case '✅  Yes':
+          break
+        case '❌  No':
+          break
+        default:
+          break
+      }
+    }
+
     switch (mainQuestionsProps.dev_side) {
       case '🖥️   Front-End':
         const { client_stack } = await prompt.ask(questions.client)
@@ -37,8 +48,6 @@ export = {
 
             break
           case '⚛️   React':
-            createProjectByPath(path.reactjs)
-
             break
           default:
             break
