@@ -1,0 +1,86 @@
+[
+  {
+    "template": "init/client/react-js/github/gitkeep.ejs",
+    "target": "/src/.github/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/assets/icons/gitkeep.ejs",
+    "target": "/src/assets/icons/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/assets/images/gitkeep.ejs",
+    "target": "/src/assets/images/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/assets/videos/gitkeep.ejs",
+    "target": "/src/assets/videos/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/assets/index.js.ejs",
+    "target": "/src/assets/index.js"
+  },
+  {
+    "template": "init/client/react-js/src/components/gitkeep.ejs",
+    "target": "/src/components/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/pages/gitkeep.ejs",
+    "target": "/src/pages/.gitkeep"
+  },
+  {
+    "template": "init/client/react-js/src/services/api.js.ejs",
+    "target": "/src/services/api.js"
+  },
+  {
+    "template": "init/client/react-js/src/themes/colors/index.js.ejs",
+    "target": "/src/themes/colors/index.js"
+  },
+  {
+    "template": "init/client/react-js/src/themes/fonts/index.js.ejs",
+    "target": "/src/themes/fonts/index.js"
+  },
+  {
+    "template": "init/client/react-js/src/App.jsx.ejs",
+    "target": "/src/App.jsx"
+  },
+  {
+    "template": "init/client/react-js/src/index.js.ejs",
+    "target": "/src/index.js"
+  },
+  {
+    "template": "init/client/react-js/src/main.jsx.ejs",
+    "target": "/src/main.jsx"
+  },
+  {
+    "template": "init/client/react-js/env.ejs",
+    "target": "/.env"
+  },
+  {
+    "template": "init/client/react-js/gitignore.ejs",
+    "target": "/.gitignore"
+  },
+  {
+    "template": "init/client/react-js/index.html.ejs",
+    "target": "/index.html"
+  },
+  {
+    "template": "init/client/react-js/LICENSE.ejs",
+    "target": "/LICENSE"
+  },
+  {
+    "template": "init/client/react-js/package.json.ejs",
+    "target": "/package.json"
+  },
+  {
+    "template": "init/client/react-js/README.md.ejs",
+    "target": "/README.md"
+  },
+  {
+    "template": "init/client/react-js/TODO.md.ejs",
+    "target": "/TODO.md"
+  },
+  {
+    "template": "init/client/react-js/vite.config.js.ejs",
+    "target": "/vite.config.js"
+  }
+]

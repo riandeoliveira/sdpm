@@ -5,7 +5,7 @@ import serverQuestions from '../questions/server'
 import mobileQuestions from '../questions/mobile'
 import fullstackQuestions from '../questions/fullstack'
 import databaseQuestions from '../questions/database'
-import { vanillaPath } from '../paths'
+import { vanillaPath, reactjsPath } from '../paths'
 
 export = {
   name: 'init',
@@ -27,18 +27,24 @@ export = {
 
         switch (client_stack) {
           case '🌐  HTML / CSS / JS':
-            // Função
-
             vanillaPath.map(async (item) => {
               await generate({
                 template: item.template,
                 target: lowerProjectName + item.target,
-                props: { ...mainQuestionsProps, currentYear },
+                props: { ...mainQuestionsProps, lowerProjectName, currentYear },
               })
             })
 
             break
           case '⚛️   React':
+            reactjsPath.map(async (item) => {
+              await generate({
+                template: item.template,
+                target: lowerProjectName + item.target,
+                props: { ...mainQuestionsProps, lowerProjectName, currentYear },
+              })
+            })
+
             break
           default:
             break
