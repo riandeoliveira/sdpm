@@ -17,7 +17,6 @@
     "noUnusedLocals": true,
     "sourceMap": false,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "inlineSourceMap": true,
     "resolveJsonModule": true,
     "outDir": "build",
