@@ -65,7 +65,9 @@ export = {
 
         switch (server_stack) {
           case "⚙️   Node.js":
-
+            (await askByTypeScript())
+              ? createProjectByPath(path.nodejs_ts)
+              : createProjectByPath(path.nodejs);
           default:
             break;
         }
