@@ -1,21 +1,21 @@
-import { GluegunToolbox, prompt } from 'gluegun'
-import * as questions from '../questions'
-import { PathList } from '../interfaces'
-import * as path from '../paths'
+import { GluegunToolbox, prompt } from "gluegun";
+import * as questions from "../questions";
+import { PathList } from "../interfaces";
+import * as path from "../paths";
 
 export = {
-  name: 'init',
-  description: 'Start a new project',
+  name: "init",
+  description: "Start a new project",
 
   run: async ({ template: { generate } }: GluegunToolbox) => {
-    const mainQuestionsProps = await prompt.ask(questions.main)
+    const mainQuestionsProps = await prompt.ask(questions.main);
 
     const lowerProjectName = mainQuestionsProps.project_name
       .toLowerCase()
-      .split(' ')
-      .join('-')
+      .split(" ")
+      .join("-");
 
-    const currentYear = new Date().getFullYear()
+    const currentYear = new Date().getFullYear();
 
     const createProjectByPath = (path: PathList): void => {
       path.map(async (item) => {
@@ -23,82 +23,82 @@ export = {
           template: item.template,
           target: lowerProjectName + item.target,
           props: { ...mainQuestionsProps, lowerProjectName, currentYear },
-        })
-      })
-    }
+        });
+      });
+    };
 
     const askByTypeScript = async (): Promise<boolean> => {
-      const { ts_option } = await prompt.ask(questions.typescript)
+      const { ts_option } = await prompt.ask(questions.typescript);
 
       switch (ts_option) {
-        case '✅  Yes':
-          return true
-        case '❌  No':
-          return false
+        case "✅  Yes":
+          return true;
+        case "❌  No":
+          return false;
         default:
-          break
+          break;
       }
-    }
+    };
 
     switch (mainQuestionsProps.dev_side) {
-      case '🖥️   Front-End':
-        const { client_stack } = await prompt.ask(questions.client)
+      case "🖥️   Front-End":
+        const { client_stack } = await prompt.ask(questions.client);
 
         switch (client_stack) {
-          case '🌐  HTML / CSS / JS':
-            createProjectByPath(path.vanilla)
+          case "🌐  HTML / CSS / JS":
+            createProjectByPath(path.vanilla);
 
-            break
-          case '⚛️   React':
-            ;(await askByTypeScript())
+            break;
+          case "⚛️   React":
+            (await askByTypeScript())
               ? createProjectByPath(path.reactjs_ts)
-              : createProjectByPath(path.reactjs)
+              : createProjectByPath(path.reactjs);
 
-            break
+            break;
           default:
-            break
+            break;
         }
 
-        break
-      case '🗄️   Back-End':
-        const { server_stack } = await prompt.ask(questions.server)
+        break;
+      case "🗄️   Back-End":
+        const { server_stack } = await prompt.ask(questions.server);
 
         switch (server_stack) {
-          case '⚙️   Node.js':
+          case "⚙️   Node.js":
 
           default:
-            break
+            break;
         }
 
-        break
-      case '📱  Mobile':
-        const { mobile_stack } = await prompt.ask(questions.mobile)
+        break;
+      case "📱  Mobile":
+        const { mobile_stack } = await prompt.ask(questions.mobile);
 
         switch (mobile_stack) {
-          case '⚛️ React Native':
-            break
+          case "⚛️ React Native":
+            break;
           default:
-            break
+            break;
         }
 
-        break
-      case '🛠️   Full-Stack':
-        const { stack } = await prompt.ask(questions.fullstack)
+        break;
+      case "🛠️   Full-Stack":
+        const { stack } = await prompt.ask(questions.fullstack);
 
         switch (stack) {
-          case '⚛️   MERN Stack':
-            break
-          case '🅰️   MEAN Stack':
-            break
-          case '❇️   MEVN Stack':
-            break
+          case "⚛️   MERN Stack":
+            break;
+          case "🅰️   MEAN Stack":
+            break;
+          case "❇️   MEVN Stack":
+            break;
           default:
-            break
+            break;
         }
 
-        break
+        break;
       default:
-        break
+        break;
     }
 
     // switch (technologies) {
@@ -418,4 +418,4 @@ export = {
     //     break
     // }
   },
-}
+};
