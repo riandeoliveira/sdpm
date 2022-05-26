@@ -1,7 +1,7 @@
 [
   {
     "template": "init/typescript/reactjs/github/gitkeep.ejs",
-    "target": "/src/.github/.gitkeep"
+    "target": "/.github/.gitkeep"
   },
   {
     "template": "init/typescript/reactjs/src/assets/icons/gitkeep.ejs",
