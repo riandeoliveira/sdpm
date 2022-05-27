@@ -89,6 +89,10 @@ export = {
 
         switch (stack) {
           case "⚛️   MERN Stack":
+            (await askByTypeScript())
+              ? createProjectByPath(path.mern_stack_ts)
+              : createProjectByPath(path.mern_stack);
+
             break;
           case "🅰️   MEAN Stack":
             break;
