@@ -31,7 +31,7 @@
     "noResolve": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "plugins": [],
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "preserveValueImports": true,
     "pretty": true,
     "removeComments": true,
@@ -44,5 +44,11 @@
     "target": "es5"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "commitlint.config.cjs",
+    "next-env.d.ts",
+    "next.config.mjs"
+  ]
 }
