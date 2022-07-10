@@ -1,6 +1,6 @@
 import { GluegunToolbox, prompt } from "gluegun";
-import paths from "../paths/nextjs_ts.json";
-import questions from "../questions/questions.json";
+import paths from "../paths/init/nextjs_ts.json";
+import questions from "../questions/init/questions.json";
 
 export = {
   name: "init",
@@ -27,15 +27,5 @@ export = {
         props: { ...answers, lowerCaseProjectName, currentYear },
       });
     });
-
-    // const createProjectByPath = (path: PathList): void => {
-    //   path.map(async (item) => {
-    //     await generate({
-    //       template: item.template,
-    //       target: lowerProjectName + item.target,
-    //       props: { ...mainQuestionsProps, lowerProjectName, currentYear },
-    //     });
-    //   });
-    // };
   },
 };
