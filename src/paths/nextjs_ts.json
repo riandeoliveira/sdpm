@@ -1,0 +1,62 @@
+[
+  {
+    "template": "init/nextjs_ts/gitkeep.ejs",
+    "target": "/.github/.gitkeep"
+  },
+  {
+    "template": "init/nextjs_ts/editorconfig.ejs",
+    "target": "/.editorconfig"
+  },
+  {
+    "template": "init/nextjs_ts/eslintignore.ejs",
+    "target": "/.eslintignore"
+  },
+  {
+    "template": "init/nextjs_ts/eslintrc.ejs",
+    "target": "/.eslintrc.json"
+  },
+  {
+    "template": "init/nextjs_ts/gitattributes.ejs",
+    "target": "/.gitattributes"
+  },
+  {
+    "template": "init/nextjs_ts/gitignore.ejs",
+    "target": "/.gitignore"
+  },
+  {
+    "template": "init/nextjs_ts/prettierignore.ejs",
+    "target": "/.prettierignore"
+  },
+  {
+    "template": "init/nextjs_ts/prettierrc.ejs",
+    "target": "/.prettierrc.json"
+  },
+  {
+    "template": "init/nextjs_ts/stylelintrc.ejs",
+    "target": "/.stylelintrc.json"
+  },
+  {
+    "template": "init/nextjs_ts/next-env.ejs",
+    "target": "/next-env.d.ts"
+  },
+  {
+    "template": "init/nextjs_ts/next.config.ejs",
+    "target": "/next.config.mjs"
+  },
+  {
+    "template": "init/nextjs_ts/package.ejs",
+    "target": "/package.json"
+  },
+  {
+    "template": "init/nextjs_ts/README.ejs",
+    "target": "/README.md"
+  },
+  {
+    "template": "init/nextjs_ts/TODO.ejs",
+    "target": "/TODO.md"
+  },
+  {
+    "template": "init/nextjs_ts/tsconfig.ejs",
+    "target": "/tsconfig.json"
+  }
+]
