@@ -23,7 +23,7 @@ export = {
     paths.map(async (path) => {
       await generate({
         template: path.template,
-        target: lowerCaseProjectName + path.target,
+        target: `${lowerCaseProjectName}/${path.target}`,
         props: { ...answers, lowerCaseProjectName, currentYear },
       });
     });
