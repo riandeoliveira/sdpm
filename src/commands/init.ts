@@ -1,4 +1,4 @@
-import { GluegunToolbox, prompt } from "gluegun";
+import { GluegunToolbox, print, prompt } from "gluegun";
 import paths from "../paths/init/nextjs_ts.json";
 import questions from "../questions/init/questions.json";
 
@@ -16,10 +16,6 @@ export = {
 
     const currentYear = new Date().getFullYear();
 
-    console.log(answers);
-    console.log(lowerCaseProjectName);
-    console.log(currentYear);
-
     paths.map(async (path) => {
       await generate({
         template: path.template,
@@ -27,5 +23,7 @@ export = {
         props: { ...answers, lowerCaseProjectName, currentYear },
       });
     });
+
+    print.success("\nProject created successfully");
   },
 };
