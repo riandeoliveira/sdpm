@@ -1,3 +1,4 @@
+import { appendFileSync, readdir, writeFileSync } from "fs";
 import { GluegunToolbox, prompt } from "gluegun";
 import question from "../questions/create/question.json";
 
@@ -17,6 +18,22 @@ export = {
     await generate({
       template: "create/component_tsx/styles.ejs",
       target: `src/components/${component_name}/styles.module.scss`,
+    });
+
+    process.chdir("./src/components");
+
+    readdir(process.cwd(), (err, files) => {
+      const sourceFileIndex = files.indexOf("index.ts");
+
+      files.splice(sourceFileIndex, 1);
+
+      files.map((file, i) => {
+        if (i === 0) writeFileSync("index.ts", "");
+
+        appendFileSync("index.ts", `import ${file} from "./${file}";\n`);
+      });
+
+      appendFileSync("index.ts", `\nexport { ${files.join(", ")} };\n`);
     });
   },
 };
