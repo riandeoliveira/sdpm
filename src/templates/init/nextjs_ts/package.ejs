@@ -13,6 +13,8 @@
   },
   "scripts": {
     "build": "next build",
+    "commit": "cz",
+    "commitlint": "commitlint --edit",
     "dev": "next dev",
     "eslint": "next lint",
     "format": "prettier --write --ignore-unknown .",
@@ -30,10 +32,15 @@
     "react": "^18.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "@types/node": "^18.0.3",
     "@types/react-dom": "^18.0.0",
     "@types/react": "^18.0.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.18.0",
+    "husky": "^8.0.1",
     "postcss-scss": "^4.0.4",
     "prettier": "^2.7.1",
     "prisma": "^4.0.0",
@@ -45,5 +52,10 @@
     "type": "git",
     "url": "<YOUR_REPOSITORY_URL>"
   },
-  "keywords": []
+  "keywords": [],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

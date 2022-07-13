@@ -4,6 +4,14 @@
     "target": ".github/.gitkeep"
   },
   {
+    "template": "init/nextjs_ts/husky.ejs",
+    "target": ".husky/_/husky.sh"
+  },
+  {
+    "template": "init/nextjs_ts/commit-msg.ejs",
+    "target": ".husky/commit-msg"
+  },
+  {
     "template": "init/nextjs_ts/gitkeep.ejs",
     "target": "public/assets/icons/.gitkeep"
   },
@@ -90,6 +98,10 @@
   {
     "template": "init/nextjs_ts/utils.ejs",
     "target": "src/styles/utils.scss"
+  },
+  {
+    "template": "init/nextjs_ts/commitlintrc.ejs",
+    "target": ".commitlintrc.json"
   },
   {
     "template": "init/nextjs_ts/editorconfig.ejs",
