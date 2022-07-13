@@ -19,8 +19,8 @@
     "eslint": "next lint",
     "format": "prettier --write --ignore-unknown .",
     "lint": "npm run format & npm run stylelint & npm run eslint",
-    "postinstall": "husky install",
     "prebuild": "npm run lint",
+    "prepare": "husky install",
     "start": "next start",
     "stylelint": "stylelint **/*.scss"
   },
