@@ -1,6 +1,15 @@
+import { Main } from "components";
 import type { NextPage } from "next";
-import Home from "./home";
 
-const Index: NextPage = (): JSX.Element => <Home />;
+const Home: NextPage = (): JSX.Element => {
+  return (
+    <>
+      <Main>
+        <h1>Hello, <%= props.author %>!</h1>
+        <h2>Have a nice coding ;)</h2>
+      </Main>
+    </>
+  );
+};
 
-export default Index;
+export default Home;
