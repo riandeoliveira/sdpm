@@ -5,6 +5,14 @@
     "React": "readonly"
   },
   "noInlineConfig": true,
+  "overrides": [
+    {
+      "files": ["**/*.spec.ts", "**/*.spec.tsx"],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
   "root": false,
   "rules": {
     "accessor-pairs": "error",
