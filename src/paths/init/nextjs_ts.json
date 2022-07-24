@@ -100,10 +100,6 @@
     "target": "src/styles/fonts/_index.scss"
   },
   {
-    "template": "init/nextjs_ts/functions.ejs",
-    "target": "src/styles/functions/_index.scss"
-  },
-  {
     "template": "init/nextjs_ts/global.ejs",
     "target": "src/styles/global/_index.scss"
   },
