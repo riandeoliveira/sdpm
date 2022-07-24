@@ -3,13 +3,9 @@
 @mixin accessibility($color) {
   border-radius: 0.25rem;
   outline: 0;
-  transition: box-shadow 0.15s, color 0.15s;
+  transition: box-shadow 0.15s;
 
   &:focus-visible {
     box-shadow: 0 0 0 0.25rem $color;
-  }
-
-  &:hover {
-    color: $color;
   }
 }
