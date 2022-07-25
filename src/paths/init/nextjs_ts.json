@@ -160,6 +160,14 @@
     "target": ".stylelintrc.json"
   },
   {
+    "template": "init/nextjs_ts/jest.config.ejs",
+    "target": "jest.config.js"
+  },
+  {
+    "template": "init/nextjs_ts/jest.setup.ejs",
+    "target": "jest.setup.js"
+  },
+  {
     "template": "init/nextjs_ts/LICENSE.ejs",
     "target": "LICENSE"
   },
