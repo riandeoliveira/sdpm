@@ -28,9 +28,11 @@ export = {
       files.splice(sourceFileIndex, 1);
 
       files.map((file, i) => {
-        if (i === 0) writeFileSync("index.ts", "");
+        if (file !== "index.spec.tsx") {
+          if (i === 0) writeFileSync("index.ts", "");
 
-        appendFileSync("index.ts", `import ${file} from "./${file}";\n`);
+          appendFileSync("index.ts", `import ${file} from "./${file}";\n`);
+        }
       });
 
       appendFileSync("index.ts", `\nexport { ${files.join(", ")} };\n`);
